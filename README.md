@@ -1,2 +1,2 @@
 # sico.cuelist
-objects to run duelist in Max with JS
+objects to run cuelists in Max with JS
