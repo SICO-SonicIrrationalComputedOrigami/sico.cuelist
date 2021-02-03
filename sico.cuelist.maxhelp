@@ -59,7 +59,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 176.0, 328.5, 118.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "another example of whatever receiver"
 				}
 
@@ -72,7 +71,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 601.0, 36.5, 145.0, 33.0 ],
-					"presentation_linecount" : 3,
 					"text" : "example of a delay efx controlled via the cuelist"
 				}
 
@@ -268,7 +266,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 667.0, 196.5, 52.0, 22.0 ],
-					"text" : "0.9 250"
+					"text" : "0.9 500"
 				}
 
 			}
@@ -465,11 +463,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.0, 107.0, 118.0, 33.0 ],
+					"patching_rect" : [ 79.0, 96.0, 164.0, 20.0 ],
 					"text" : "bang to adavance the cuelist"
 				}
 
@@ -529,7 +526,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 151.0, 157.0, 49.0 ],
-									"text" : "delay, feedback 0.9 250, time 1000, gainIn 1 1000, gainOut 1 1000 0 2000, standby 1, id delay"
+									"text" : "delay, feedback 0.9 500, time 150, gainIn 0 1000, gainOut 0 1000, standby 1, id delay"
 								}
 
 							}
@@ -623,8 +620,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.0, 259.5, 70.5, 22.0 ],
-					"text" : "Cue_1"
+					"patching_rect" : [ 126.5, 259.5, 70.5, 22.0 ],
+					"text" : "Cue_3"
 				}
 
 			}
@@ -635,8 +632,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.0, 259.5, 50.0, 22.0 ],
-					"text" : "Init"
+					"patching_rect" : [ 29.0, 259.5, 69.0, 22.0 ],
+					"text" : "Cue_2_1"
 				}
 
 			}
@@ -697,7 +694,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 601.0, 196.5, 52.0, 22.0 ],
-					"text" : "1000"
+					"text" : "150"
 				}
 
 			}
@@ -721,7 +718,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 79.0, 107.0, 42.0, 42.0 ]
+					"patching_rect" : [ 79.0, 127.0, 42.0, 42.0 ]
 				}
 
 			}
@@ -744,13 +741,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 225.0, 94.5, 22.0 ],
+					"patching_rect" : [ 79.0, 225.0, 118.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "cuelistOO.js",
+						"filename" : "sico.cuelist.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cuelistOO.js"
+					"text" : "js sico.cuelist.js"
 				}
 
 			}
@@ -1085,8 +1082,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "cuelistOO.js",
-				"bootpath" : "~/Documents/SICO/sico.cuelist-dev",
+				"name" : "sico.cuelist.js",
+				"bootpath" : "~/Documents/SICO/sico.cuelist",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
