@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"items" : [ "Init", ",", "Cue_1", ",", "Cue_2", ",", "Cue_2_1", ",", "Cue_3" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 139.0, 147.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -53,22 +66,6 @@
 			}
 , 			{
 				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"border" : 5,
-					"bordercolor" : [ 0.031372549019608, 0.094117647058824, 0.050980392156863, 1.0 ],
-					"id" : "obj-46",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 311.0, 294.0, 255.0 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-45",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -77,22 +74,6 @@
 					"patching_rect" : [ 601.0, 36.5, 145.0, 33.0 ],
 					"presentation_linecount" : 3,
 					"text" : "example of a delay efx controlled via the cuelist"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"border" : 5,
-					"bordercolor" : [ 0.031372549019608, 0.094117647058824, 0.050980392156863, 1.0 ],
-					"id" : "obj-44",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 351.0, 23.0, 404.0, 543.0 ],
-					"proportion" : 0.5
 				}
 
 			}
@@ -282,14 +263,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 667.0, 196.5, 52.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "0.5 2000"
+					"patching_rect" : [ 667.0, 196.5, 52.0, 22.0 ],
+					"text" : "0.9 250"
 				}
 
 			}
@@ -384,7 +363,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 151.0, 157.0, 49.0 ],
-									"text" : "cucu, gainIn 5 100"
+									"text" : "cucu, gainIn 0 1000"
 								}
 
 							}
@@ -550,7 +529,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 151.0, 157.0, 49.0 ],
-									"text" : "delay, feedback 0.5 2000, time 50, gainIn 50 100, gainOut 150 100, standby 1, id delay"
+									"text" : "delay, feedback 0.9 250, time 1000, gainIn 1 1000, gainOut 1 1000 0 2000, standby 1, id delay"
 								}
 
 							}
@@ -625,7 +604,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 454.0, 89.5, 103.0, 22.0 ],
+					"patching_rect" : [ 454.0, 85.5, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -645,7 +624,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 103.0, 259.5, 70.5, 22.0 ],
-					"text" : "undefined"
+					"text" : "Cue_1"
 				}
 
 			}
@@ -657,19 +636,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 48.0, 259.5, 50.0, 22.0 ],
-					"text" : "Cue_3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 139.0, 149.0, 50.0, 22.0 ]
+					"text" : "Init"
 				}
 
 			}
@@ -730,7 +697,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 601.0, 196.5, 52.0, 22.0 ],
-					"text" : "50"
+					"text" : "1000"
 				}
 
 			}
@@ -741,7 +708,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 454.0, 132.5, 283.0, 22.0 ],
+					"patching_rect" : [ 454.0, 122.5, 283.0, 22.0 ],
 					"text" : "route gainIn gainOut time feedback"
 				}
 
@@ -821,6 +788,40 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"border" : 5,
+					"bordercolor" : [ 0.031372549019608, 0.094117647058824, 0.050980392156863, 1.0 ],
+					"id" : "obj-44",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.0, 23.0, 404.0, 543.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"border" : 5,
+					"bordercolor" : [ 0.031372549019608, 0.094117647058824, 0.050980392156863, 1.0 ],
+					"id" : "obj-46",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 311.0, 294.0, 255.0 ],
+					"proportion" : 0.5
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -875,13 +876,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1010,6 +1004,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -1085,7 +1086,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cuelistOO.js",
-				"bootpath" : "~/Documents/SICO/sico.cuelist",
+				"bootpath" : "~/Documents/SICO/sico.cuelist-dev",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
